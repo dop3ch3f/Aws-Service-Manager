@@ -1,0 +1,19 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/dop3ch3f/Documents/Codes/NCS/src/utils/logs/error/.9a8e60f25d862351b8a58633568a80fac992947d-audit.json",
+    "files": [
+        {
+            "date": 1636671524140,
+            "name": "/Users/dop3ch3f/Documents/Codes/NCS/src/utils/logs/error/2021-11-11.log",
+            "hash": "7bc9af5f2458c54e9456c751e8d46492"
+        },
+        {
+            "date": 1636671663808,
+            "name": "/Users/dop3ch3f/Documents/Codes/NCS/src/utils/logs/error/2021-11-12.log",
+            "hash": "11f6d11351b6aed7a91db93ac3329a85"
+        }
+    ]
+}
