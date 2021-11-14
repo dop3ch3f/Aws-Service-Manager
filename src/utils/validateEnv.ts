@@ -13,6 +13,8 @@ const validateEnv = () => {
     DB_DATABASE: str(),
     DB_PORT: str(),
     AWS_SECURITY_GROUP_ID: str(),
+    AWS_AMI_PORT: str(),
+    AWS_AMI_PROTOCOL: str(),
   });
 };
 

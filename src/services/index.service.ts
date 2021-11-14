@@ -1,6 +1,6 @@
 import AWS from "aws-sdk";
-import { v4 as uuidv4 } from 'uuid';
 import logsModel, {InstanceStateName, Log} from "@models/logs.model";
+import url, {URL} from 'url';
 
 // Load credentials from env file
 AWS.config.update({
@@ -59,7 +59,7 @@ export default class IndexService {
             // TODO: find a more optimal way to await the start of an instance
             await sleep(30000);
 
-            // create elastic ip allocation
+            // create elastic ip allocation as aws does not return public url in sdk generated instances
             const allocation = await ec2.allocateAddress({Domain: 'vpc'}).promise();
             // associate elastic ip to instance
             await ec2.associateAddress({
@@ -70,7 +70,12 @@ export default class IndexService {
             // create the log entry
             const log = new logsModel();
 
-            log.url = allocation.PublicIp;
+            // parse allocation url
+            const url = new URL(allocation.PublicIp);
+            url.port = process.env.AWS_AMI_PORT;
+            url.protocol = process.env.AWS_AMI_PROTOCOL;
+
+            log.url = url.href;
             log.start_time = instance.LaunchTime;
             log.container_id = instance.InstanceId;
             // keep the remaining information for reference purposes

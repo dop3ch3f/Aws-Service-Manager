@@ -108,3 +108,6 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
     at Object.require.extensions.<computed> [as .ts] (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1374:12)
 2021-11-14 14:50:23 error: [POST] /start >> StatusCode:: 500, Message:: Invalid BASE64 encoding of user data
+2021-11-14 15:20:50 error: [POST] /start >> StatusCode:: 500, Message:: Each network interface requires a device index.
+2021-11-14 15:22:57 error: [POST] /start >> StatusCode:: 500, Message:: The pending instance 'i-0350df575c563b732' is not in a valid state for this operation.
+2021-11-14 15:28:11 error: [POST] /start >> StatusCode:: 500, Message:: The maximum number of addresses has been reached.
