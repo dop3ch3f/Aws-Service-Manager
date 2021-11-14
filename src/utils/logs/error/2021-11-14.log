@@ -1,0 +1,110 @@
+2021-11-14 02:17:48 error: uncaughtException: Unexpected token ';'
+/Users/dop3ch3f/Documents/Codes/NCS/src/services/index.service.ts:29
+            const ;
+                  ^
+
+SyntaxError: Unexpected token ';'
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Module.m._compile (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1371:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1374:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (/Users/dop3ch3f/Documents/Codes/NCS/src/controllers/index.controller.ts:2:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1371:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1374:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+2021-11-14 02:18:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/index.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m             const log = new logsModel();
+[7m  [0m [91m            ~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/index.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m             const log = new logsModel();
+[7m  [0m [91m            ~~~~~[0m
+
+    at createTSError (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:750:12)
+    at reportTSError (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:754:19)
+    at /Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1216:34
+    at Object.compile (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1243:30)
+    at Module.m._compile (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1370:30)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1374:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (/Users/dop3ch3f/Documents/Codes/NCS/src/controllers/index.controller.ts:2:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1371:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1374:12)
+2021-11-14 02:19:39 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/index.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m             })
+[7m  [0m [91m            ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/index.service.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m39[0m             })
+[7m  [0m [91m            ~[0m
+
+    at createTSError (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:750:12)
+    at reportTSError (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:754:19)
+    at /Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1216:34
+    at Object.compile (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1243:30)
+    at Module.m._compile (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1370:30)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1374:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (/Users/dop3ch3f/Documents/Codes/NCS/src/controllers/index.controller.ts:2:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1371:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1374:12)
+2021-11-14 02:45:23 error: [POST] /start >> StatusCode:: 500, Message:: The pending instance 'i-03e609c2bf1a4084f' is not in a valid state for this operation.
+2021-11-14 02:49:15 error: [POST] /start >> StatusCode:: 500, Message:: The pending instance 'i-0a86f95865b6a5ffc' is not in a valid state for this operation.
+2021-11-14 03:25:44 error: [POST] /start >> StatusCode:: 500, Message:: The maximum number of addresses has been reached.
+2021-11-14 14:46:53 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/index.service.ts[0m:[93m50[0m:[93m27[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m50[0m                 UserData: ,
+[7m  [0m [91m                          ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/index.service.ts[0m:[93m50[0m:[93m27[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m50[0m                 UserData: ,
+[7m  [0m [91m                          ~[0m
+
+    at createTSError (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:750:12)
+    at reportTSError (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:754:19)
+    at /Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1216:34
+    at Object.compile (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1243:30)
+    at Module.m._compile (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1370:30)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1374:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (/Users/dop3ch3f/Documents/Codes/NCS/src/controllers/index.controller.ts:2:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1371:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/dop3ch3f/Documents/Codes/NCS/node_modules/ts-node/src/index.ts:1374:12)
+2021-11-14 14:50:23 error: [POST] /start >> StatusCode:: 500, Message:: Invalid BASE64 encoding of user data

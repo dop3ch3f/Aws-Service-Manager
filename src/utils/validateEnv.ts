@@ -6,11 +6,13 @@ const validateEnv = () => {
     PORT: port(),
     AWS_ACCESS_KEY_ID: str(),
     AWS_SECRET_ACCESS_KEY: str(),
-    AWS_SESSION_TOKEN: str(),
-    AWS_AMI_URL: str(),
+    AWS_AMI_ID: str(),
+    AWS_REGION: str(),
+    AWS_SUBNET_ID: str(),
     DB_HOST: str(),
     DB_DATABASE: str(),
-    DB_PORT: str()
+    DB_PORT: str(),
+    AWS_SECURITY_GROUP_ID: str(),
   });
 };
 
