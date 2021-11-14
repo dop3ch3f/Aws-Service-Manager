@@ -59,13 +59,19 @@ class IndexController {
 
   public status = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const {service_id} = req.body;
+      const {service_id} = req.params;
       if (service_id) {
         const data = await this.indexService.status(service_id);
+        return res.json({
+          status: true,
+          message: "Operation successful",
+          data,
+          error: null,
+        });
       }
       return res.status(400).json({
         status: false,
-        message: "Include the service_id of the service you will like to stop",
+        message: "Include the service_id of the service you will like to view status",
         data: null,
         error: "Invalid req parameters"
       });

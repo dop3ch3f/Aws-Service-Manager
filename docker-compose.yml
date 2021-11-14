@@ -1,28 +1,11 @@
 version: '3.7'
 
 services:
-  proxy:
-    image: nginx:alpine
-    container_name: proxy
-    ports:
-      - '80:80'
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-    restart: 'unless-stopped'
-    networks:
-      - backend
   server:
-    build:
-      context: ./
-      target: development-build-stage
-      dockerfile: Dockerfile
+    build: .
     container_name: server
     ports:
       - '8000:8000'
-    environment:
-      MONGO_HOST: mongo
-      MONGO_PORT: 27017
-      MONGO_DATABASE: ncs
     volumes:
       - ./:/app
       - /app/node_modules

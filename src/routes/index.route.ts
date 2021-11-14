@@ -14,7 +14,7 @@ class IndexRoute implements Routes {
     this.router.get(`/`, this.indexController.index);
     this.router.post(`/start`, this.indexController.start);
     this.router.post(`/stop`, this.indexController.stop);
-    this.router.get(`/status`, this.indexController.status);
+    this.router.get(`/status/:service_id`, this.indexController.status);
   }
 }
 

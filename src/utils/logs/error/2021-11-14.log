@@ -111,3 +111,4 @@ TSError: ⨯ Unable to compile TypeScript:
 2021-11-14 15:20:50 error: [POST] /start >> StatusCode:: 500, Message:: Each network interface requires a device index.
 2021-11-14 15:22:57 error: [POST] /start >> StatusCode:: 500, Message:: The pending instance 'i-0350df575c563b732' is not in a valid state for this operation.
 2021-11-14 15:28:11 error: [POST] /start >> StatusCode:: 500, Message:: The maximum number of addresses has been reached.
+2021-11-14 21:20:41 error: [POST] /start >> StatusCode:: 500, Message:: Invalid URL: 18.119.68.46

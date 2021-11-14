@@ -35,7 +35,6 @@ export default class IndexService {
     // start a service with aws and store the data
     public async start(service_id?: string): Promise<Partial<Log>> {
 
-        if (!service_id) {
             // create a new instance
             const instances = await ec2.runInstances({
                 // read the ami from env file can be adapted to receive from request
@@ -70,12 +69,7 @@ export default class IndexService {
             // create the log entry
             const log = new logsModel();
 
-            // parse allocation url
-            const url = new URL(allocation.PublicIp);
-            url.port = process.env.AWS_AMI_PORT;
-            url.protocol = process.env.AWS_AMI_PROTOCOL;
-
-            log.url = url.href;
+            log.url = `${process.env.AWS_AMI_PROTOCOL}://${allocation.PublicIp}:${process.env.AWS_AMI_PORT}`;
             log.start_time = instance.LaunchTime;
             log.container_id = instance.InstanceId;
             // keep the remaining information for reference purposes
@@ -86,29 +80,6 @@ export default class IndexService {
             await log.save();
 
             return log;
-        }
-
-        // start a stopped instance
-
-        const instances = await ec2.startInstances({
-            InstanceIds: [service_id],
-        }).promise();
-
-        const instance = instances.StartingInstances[0];
-
-        if (instance.PreviousState.Name === InstanceStateName.Running) {
-            throw new Error(`Instance ${service_id} is currently ${instance.PreviousState.Name}`)
-        }
-
-        const log = await logsModel.findOne({container_id: service_id});
-
-        log.start_time = new Date();
-        log.status = InstanceStateName.Running;
-        log.stop_time = null;
-
-        await log.save();
-
-        return log;
     }
 
     // stop a started service with aws

@@ -8,3 +8,4 @@ The application uses preconfigured aws ami's to run them on aws ecs on demand
 - Provide all the correct env variables in the .env.example file
 - install docker and docker-compose
 - docker-compose up
+- Postman documentation (https://documenter.getpostman.com/view/3357489/UVC8E7C5)
