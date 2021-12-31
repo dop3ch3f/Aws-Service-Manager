@@ -1,5 +1,5 @@
 # NCS
-This is a Node js application that runs a set application in the cloud and provides logs for it stored in mongodb.
+This is a Node js application that runs a set AMI in an AWS account and provides startup and shutdown logs stored in a provided mongodb instance.
 
 ## Approach
 The application uses preconfigured aws ami's to run them on aws ecs on demand
